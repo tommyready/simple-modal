@@ -23,6 +23,11 @@ method.open = function(settings){
     height: settings.height || 'auto'
   });
 
+  $content.css({
+    width: settings.width - 40 || 'auto',
+    height: settings.height - 40 || 'auto'
+  });
+
   method.center();
   $(window).bind('resize.modal', method.center);
   $modal.fadeIn();

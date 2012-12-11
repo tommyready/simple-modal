@@ -11,8 +11,12 @@
         $('a#click-modal').on('click', function(e){
           e.preventDefault();
           var text = $("p").clone();
-          modal.open({content: text, width: 400}); });
-
+          modal.open({
+            content: text,
+            height: 300,
+            width: 400
+          });
+        });
       });
     </script>
   </head>
