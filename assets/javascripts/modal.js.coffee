@@ -20,12 +20,12 @@ modal = (->
       height: settings.height or 'auto'
     method.center()
     $(window).bind 'resize.modal', method.center
-    $modal.show()
-    $overlay.show()
+    $modal.fadeIn()
+    $overlay.fadeIn()
 
   method.close = ->
-    $modal.hide()
-    $overlay.hide()
+    $modal.fadeOut()
+    $overlay.fadeOut()
     $content.empty()
     $(window).unbind('resize.modal')
 

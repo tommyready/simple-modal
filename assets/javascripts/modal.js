@@ -25,13 +25,13 @@ method.open = function(settings){
 
   method.center();
   $(window).bind('resize.modal', method.center);
-  $modal.show();
-  $overlay.show();
+  $modal.fadeIn();
+  $overlay.fadeIn();
 };
 
 method.close = function(){
-  $modal.hide();
-  $overlay.hide();
+  $modal.fadeOut();
+  $overlay.fadeOut();
   $content.empty();
   $(window).unbind('resize.modal');
 };
