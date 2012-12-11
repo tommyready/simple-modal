@@ -39,7 +39,7 @@ method.close = function(){
 $overlay = $('<div id="overlay"></div>');
 $modal = $('<div id="modal"></div>');
 $content = $('<div id="modal-content"></div>');
-$close = $('<a id="close" href="#">Close</a>');
+$close = $('<a id="close" href="#">&times;</a>');
 
 $modal.hide();
 $overlay.hide();
