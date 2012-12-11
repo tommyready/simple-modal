@@ -11,6 +11,25 @@ $('a#modal').on('click', function(e){
   });
 });
 ```
+
+You can also use it with AJAX calls:
+```javascript
+$.ajax({
+  url: "ajax.html",
+  dataType: 'html',
+  success: function(data) {
+    modal.open({
+      content: data,
+      width: 400,
+      height: 300
+    });
+  },
+  error: function(){
+    alert("didnt work");
+  }
+});
+```
+
 The modal.open() function takes an optional
 settings object that can have the following properties:
 - content: the content inside the modal, it can be text or a HTML element
